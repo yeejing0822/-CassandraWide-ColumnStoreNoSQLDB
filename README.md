@@ -95,7 +95,7 @@ Capretz , 2013). On the contrary, optimistic concurrency control checks the data
 the operation to see if any concurrent updates on the same record, instead of locking the record 
 for a single modification. One of the optimistic concurrency control strategies that are 
 employed in the NoSQL database models is multi-version concurrency control (MVCC).   
-14 
+
 According to Kanungo and Morena (2018), MVCC creates a new version with every 
 transaction commit, instead of overwriting the old values. Therefore, it contains a list of 
 different versions of the data with the values history and there is only one value marked as the 
@@ -132,7 +132,7 @@ protocol:
 1.     Prepare /Promise 
 2.     Read/Results 
 3.     Propose/Accept 
-4.  Commit/Acknowledge
+4.     Commit/Acknowledge
    
 In the prepare/promise phase, a node prepares by sending a message containing a 
 proposal number to other nodes. The other nodes promise to accept the proposal provided that 
